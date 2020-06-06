@@ -1,0 +1,95 @@
+ ./clear-apache2.sh
+ cat apache2/Dockerfile
+ cat apache2/my-httpd.conf
+ cat server1/Dockerfile
+ cd ..
+ cd /c/MY_GIT/docker-apache2/
+ cd Documents/
+ cd temp/
+ cd test-httpd/
+ chmod 600 clear-apache2.sh
+ clear
+ cp apache2/my-httpd.conf apache2/my-httpd.conf.namedproxy
+ cp apache2/my-httpd.conf apache2/my-httpd.conf.working
+ cp apache2/my-httpd.conf.working apache2/my-httpd.conf.namedproxy
+ dcoker kill 01df261c8d4f
+ diff apache2/my-httpd.conf apache2/my-httpd.conf.namedproxy
+ diff apache2/my-httpd.conf apache2/my-httpd.conf.working
+ diff apache2/my-httpd.conf.working apache2/my-httpd.conf.namedproxy
+ docke rps
+ docker build -t apache2 apache2
+ docker build -t nginx-server1 server1
+ docker build -t nginx-server1 server1/Dockerfile
+ docker build -t nginx-server2 server2
+ docker build -t nginx-server3 server3
+ docker container prune
+ docker container prune -f
+ docker container prune -y
+ docker container -y prune
+ docker exec -it 4122339cb745 /bin/bash
+ docker exec -it cd395b817d48 curl localhost
+ docker exec -it fefa28713df7 /bin/bash
+ docker inspect 0b85d49b5d39
+ docker kill 01df261c8d4f
+ docker kill 1b239c049223
+ docker kill 25cde1911f94
+ docker kill 4ae9fdd8dc64
+ docker kill 5442cec32f73
+ docker kill 8b4b98861c80
+ docker kill 8e67b283462a
+ docker kill 9c8d518ce896
+ docker kill ac06fb12cf0e
+ docker kill apache2/
+ docker kill b6e294106c2c
+ docker kill e0b21093db77
+ docker kill e7c6fe471f34
+ docker kill e93a0ef7d93f
+ docker logs 0b85d49b5d39
+ docker logs 4122339cb745
+ docker logs 94ef0e368843
+ docker logs dd9fed1b1ecd
+ docker logs e0b21093db77
+ docker logs e912d24207ab
+ docker logs -f 8e67b283462a
+ docker network inspect
+ docker network inspect bad96e108613
+ docker network list
+ docker ps
+ docker ps -a
+ docker rm 0b85d49b5d39
+ docker rmi apache2
+ docker rmi nginx-server1
+ docker run -dt --name apache2 -p 8080:80 apache2
+ docker run -dt --name my-apache2 -p 8080:80 httpd:2.4
+ docker run -dt --name my-apache2 -p 8080:80 my-apache2
+ docker run --name server1 -d -p 9001:80 nginx-server1
+ docker run --name server2 -d -p 9002:80 nginx-server2
+ docker run --name server3 -d -p 9003:80 nginx-server3
+ docker run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > apache2/my-httpd.conf
+ docker system prune
+ history | grep nginx-server1
+ history >> gitBashHistory.txt
+ ll apache2/
+ ls
+ ls apache2/
+ mkdir apache2
+ mkdir server1
+ mkdir server1/static-html server2/static-html server3/static-html
+ mkdir server2
+ mkdir server3
+ mkdir test-httpd
+ q
+ touch apache2/Dockerfile
+ touch clear-apache2.sh
+ touch server1/Dockerfile server2/Dockerfile server3/Dockerfile
+ vi apache2/Dockerfile
+ vi apache2/my-httpd.conf
+ vi clear-apache2.sh
+ vi server1/Dockerfile
+ vi server1/static-html/index.html
+ vi server2/Dockerfile
+ vi server2/static-html/index.html
+ vi server3/Dockerfile
+ vi server3/static-html/index.html
+ winpty docker exec -it fefa28713df7 /bin/bash
+ winpty docker run -it -p 9992:9990 -p 8092:8080 -e JAVA_OPTS='-Xms2048m -Xmx2048m -Djava.net.preferIPv4Stack=true' routeone_ecore:9.5.1.0

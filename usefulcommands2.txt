@@ -1,0 +1,71 @@
+
+ /flushdns
+ /history >> doskeyHistory.txt
+ Documents
+ exec -it 4122339cb745 /bin/bash
+ exec -it 8b4b98861c80 curl 172.17.0.3
+ exec -it 8b4b98861c80 ping 172.17.0.3
+ exec -it 8df1e3b1f1d0 hostname -i
+ exec -it aebbf5eb938d hostname -i
+ exec -it cd395b817d48 /bin/bash
+ exec -it cd395b817d48 curl google.com
+ exec -it cd395b817d48 ping google.com
+ exec -it nginx-server1 hostname -i
+ --help
+ http://okuswaha1.local:8080/
+ http://okuswaha1.local:8080/ | grep h1
+ kill 1fd7173b3246
+ kill 29811e626b7a
+ kill cd3e3e6eec34
+ kill fefa28713df7
+ logs 9c8d518ce896
+ network inspect bad96e108613
+ network list
+ networks
+ ps
+ rm 1fd7173b3246
+ rm 29811e626b7a
+ rm cd3e3e6eec34
+ rmi apache2
+ run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > apache2/my-httpd.conf
+ -s http://okuswaha1.local:8080/ | grep h1
+ stats
+ status
+ temp
+ test-httpd
+cd Documents
+cd temp
+cd test-httpd
+curl http://okuswaha1.local:8080/ | grep h1
+curl http://okuswaha1.local:8080/
+curl -s http://okuswaha1.local:8080/ | grep h1
+docker exec -it 4122339cb745 /bin/bash
+docker exec -it 8b4b98861c80 curl 172.17.0.3
+docker exec -it 8b4b98861c80 ping 172.17.0.3
+docker exec -it 8df1e3b1f1d0 hostname -i
+docker exec -it aebbf5eb938d hostname -i
+docker exec -it cd395b817d48 /bin/bash
+docker exec -it cd395b817d48 curl google.com
+docker exec -it cd395b817d48 ping google.com
+docker exec -it nginx-server1 hostname -i
+docker --help
+docker kill 1fd7173b3246
+docker kill 29811e626b7a
+docker kill cd3e3e6eec34
+docker kill fefa28713df7
+docker logs 9c8d518ce896
+docker network inspect bad96e108613
+docker network list
+docker networks
+docker ps
+docker rm 1fd7173b3246
+docker rm 29811e626b7a
+docker rm cd3e3e6eec34
+docker rmi apache2
+docker run --rm httpd:2.4 cat /usr/local/apache2/conf/httpd.conf > apache2/my-httpd.conf
+docker stats
+doskey /history >> doskeyHistory.txt
+git status
+ipconfig /flushdns
+ipconig /flushdns
+ls
